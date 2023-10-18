@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navratri Celebration Survey</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Navratri Celebration Survey</h1>
+        <form action="submit.php" method="post">
+            <p>Introduction: Thank you for participating in our Navratri Celebration Survey. Navratri is a vibrant and culturally significant festival, and your insights will help us understand its importance and the ways people celebrate it. Please take a few minutes to answer the following questions.</p>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <select id="age" name="age">
+                    <option value="18-25">18-25</option>
+                    <option value="26-35">26-35</option>
+                    <option value="36-45">36-45</option>
+                    <option value="46-55">46-55</option>
+                    <option value="56 and above">56 and above</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male"> Male
+                <input type="radio" id="female" name="gender" value="Female"> Female
+                <input type="radio" id="non-binary" name="gender" value="Non-binary"> Non-binary
+                <input type="radio" id="prefer-not-to-say" name="gender" value="Prefer not to say"> Prefer not to say
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location (City/Country):</label>
+                <input type="text" id="location" name="location">
+            </div>
+
+            <p>Navratri Celebration:</p>
+
+            <div class="form-group">
+                <label for="celebrate-navratri">Do you celebrate Navratri?</label>
+                <input type="radio" id="celebrate-yes" name="celebrate-navratri" value="Yes"> Yes
+                <input type="radio" id="celebrate-no" name="celebrate-navratri" value="No"> No
+            </div>
+
+            <div class="form-group">
+                <label>How do you primarily celebrate Navratri? (Select all that apply)</label>
+                <input type="checkbox" id="attend-events" name="celebration-method" value="Attending Garba/Dandiya events"> Attending Garba/Dandiya events
+                <input type="checkbox" id="fasting" name="celebration-method" value="Fasting"> Fasting
+                <input type="checkbox" id="home-puja" name="celebration-method" value="Home puja (prayer rituals)"> Home puja (prayer rituals)
+                <input type="checkbox" id="visit-temples" name="celebration-method" value="Visiting temples"> Visiting temples
+                <input type="checkbox" id="other" name="celebration-method" value="Other"> Other (please specify)
+            </div>
+
+            <div class="form-group">
+                <label>How important is Navratri to you and your family on a scale of 1 to 5, with 1 being not important and 5 being extremely important?</label>
+                <select id="importance" name="importance">
+                    <option value="1">1 - Not important</option>
+                    <option value="2">2 - Somewhat important</option>
+                    <option value="3">3 - Moderately important</option>
+                    <option value="4">4 - Important</option>
+                    <option value="5">5 - Extremely important</option>
+                </select>
+            </div>
+
+            <p>Garba and Dandiya:</p>
+
+            <div class="form-group">
+                <label for="garba-dandiya">Do you participate in Garba or Dandiya events during Navratri?</label>
+                <input type="radio" id="garba-yes" name="garba-dandiya" value="Yes"> Yes
+                <input type="radio" id="garba-no" name="garba-dandiya" value="No"> No
+            </div>
+
+            <div class="form-group">
+                <label>How would you describe your experience with Garba/Dandiya events?</label>
+                <input type="radio" id="enjoyable" name="garba-experience" value="Enjoyable and a significant part of my Navratri celebrations"> Enjoyable and a significant part of my Navratri celebrations
+                <input type="radio" id="occasionally" name="garba-experience" value="Occasionally participate, but not a major part of my celebration"> Occasionally participate, but not a major part of my celebration
+                <input type="radio" id="not-participate" name="garba-experience" value="Don't participate at all"> Don't participate at all
+            </div>
+
+            <div class="form-group">
+                <label>What do you enjoy most about Garba/Dandiya events?</label>
+                <textarea id="garba-enjoy" name="garba-enjoy" rows="3"></textarea>
+            </div>
+
+            <p>Fasting and Food:</p>
+
+            <div class="form-group">
+                <label for="observe-fasting">Do you observe fasting during Navratri?</label>
+                <input type="radio" id="fasting-yes" name="observe-fasting" value="Yes"> Yes
+                <input type="radio" id="fasting-no" name="observe-fasting" value="No"> No
+            </div>
+
+            <div class="form-group">
+                <label for="food-type">If you fast during Navratri, what type of food do you typically consume?</label>
+                <textarea id="food-type" name="food-type" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="favorite-dishes">What are your favorite Navratri special dishes?</label>
+                <textarea id="favorite-dishes" name="favorite-dishes" rows="3"></textarea>
+            </div>
+
+            <p>Traditional Practices:</p>
+
+            <div class="form-group">
+                <label for="traditional-rituals">Do you follow any specific traditional rituals or practices during Navratri? If yes, please describe.</label>
+                <textarea id="traditional-rituals" name="traditional-rituals" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="attire">Do you have a special Navratri attire or dress code that you follow?</label>
+                <textarea id="attire" name="attire" rows="3"></textarea>
+            </div>
+
+            <p>Overall Experience:</p>
+
+            <div class="form-group">
+                <label>On a scale of 1 to 5, how would you rate your overall Navratri experience, with 1 being unsatisfactory and 5 being highly satisfactory?</label>
+                <select id="overall-experience" name="overall-experience">
+                    <option value="1">1 - Unsatisfactory</option>
+                    <option value="2">2 - Somewhat unsatisfactory</option>
+                    <option value="3">3 - Neutral</option>
+                    <option value="4">4 - Satisfactory</option>
+                    <option value="5">5 - Highly satisfactory</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="additional-comments">Would you like to share any additional comments or suggestions related to Navratri celebrations?</label>
+                <textarea id="additional-comments" name="additional-comments" rows="5"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
